@@ -1,8 +1,8 @@
 ''' find the largest number in the list of given integers'''
 
 
-def largest_number():
-    numbers = list(input("enter the numbers:"))
+def largest_number(numbers):
+
     temp = float("-inf")
     for num in numbers:
         if temp < int(num):
@@ -11,4 +11,4 @@ def largest_number():
     return temp
 
 
-print(largest_number())
+print(largest_number(numbers=list(input("enter the numbers:"))))
