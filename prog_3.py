@@ -1,3 +1,6 @@
+'''count the number of vowel characters in a string'''
+
+
 def count_vowels(string_input):
 
     count = 0
