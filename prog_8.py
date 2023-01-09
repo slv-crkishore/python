@@ -1,8 +1,8 @@
 '''Write a Python function that takes a list of integers and returns the sum of the even numbers in the list.'''
 
 
-def sum_even():
-    numbers = input("enter the numbers :")
+def sum_even(numbers):
+
     temp = []
 
     for i in numbers:
@@ -10,7 +10,7 @@ def sum_even():
         temp.append(int(i))
 
     res = sum([n for n in temp if n % 2 == 0])
-    print(res)
+    return res
 
 
-sum_even()
+print(sum_even(numbers=input("enter the numbers :")))
