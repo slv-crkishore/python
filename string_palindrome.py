@@ -20,9 +20,11 @@ def pal(list_it):
     for items in list_it:
         temp += items
     if temp == list_it:
-        print(temp + " is a palindrome")
+        # print(temp + " is a palindrome")
+        return True
     else:
-        print(list_it + " is not a palindrome")
+        # print(list_it + " is not a palindrome")
+        return False
 
 
-pal(list_it=input("enter the strings:"))
+print(pal(list_it=input("enter the strings:")))
