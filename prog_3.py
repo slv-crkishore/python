@@ -1,12 +1,15 @@
-str = [19, 19, 5, 5, 5, 5, 1, 3]
+def count_vowels(string_input):
 
+    count = 0
+    for items in string_input:
+        if items.lower() == 'a' or items.lower() == 'e' or items.lower() == 'i' or items.lower() == 'o' or items.lower() == 'u':
+            count += 1
 
-def check(str):
-    if str.count(19) == 2 and str.count(5) >= 3:
-        return True
-
+    if count >= 1:
+        return count
     else:
-        return False
+        print("No vowel found")
 
 
-check(str)
+print(count_vowels(string_input=input(
+    "enter the string to count the number of vowels:")))
