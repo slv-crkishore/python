@@ -7,5 +7,7 @@ def index(strings, string):
         if strings[i] == string:
             return i
 
+    return -1
+
 
 print(index(string="bird", strings=input("enter the strings : ").split()))
