@@ -1,8 +1,7 @@
 '''Write a function that takes in a list of strings and returns a new list with all the strings reversed.'''
 
 
-def rev_str():
-    string = input("enter strings : ").split(" ")
+def rev_str(string):
     temp = []
     for ch in string:
         temp.append(ch[::-1])
@@ -10,4 +9,4 @@ def rev_str():
     return temp
 
 
-print(rev_str())
+print(rev_str(string=input("enter strings : ").split(" ")))
