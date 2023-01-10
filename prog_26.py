@@ -15,4 +15,4 @@ def alphabetic_order(string):
     return "".join(temp1)
 
 
-print(alphabetic_order(string='kishore'))
+print(alphabetic_order(string=input("enter the string :")))
